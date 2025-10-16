@@ -27,4 +27,4 @@ jobs:
             BYTEBASE_TARGETS: "instances/new-instance/databases/test"
             FILE_PATTERN: "migrations-semver/*.sql"
         run: |
-          bytebase-action check --url=${{ env.BYTEBASE_URL }} --project=${{ env.BYTEBASE_PROJECT }} --targets=${{ env.BYTEBASE_TARGETS }} --file-pattern=${{ env.FILE_PATTERN }}
+          bytebase-action check --url=https://trisyllabic-dion-ineffably.ngrok-free.dev --project=${{ env.BYTEBASE_PROJECT }} --targets=${{ env.BYTEBASE_TARGETS }} --file-pattern=${{ env.FILE_PATTERN }}
