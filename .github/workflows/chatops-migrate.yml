@@ -28,11 +28,11 @@ jobs:
           test:
             stage: environments/test
             targets:
-              - instances/test-sample-instance/databases/hr_test
+              - instances/new-instance/databases/test
           prod:
             stage: environments/prod
             targets:
-              - instances/prod-sample-instance/databases/hr_prod
+              - instances/new-instance/databases/production
           EOF
       - name: Parse migrate command
         id: parse

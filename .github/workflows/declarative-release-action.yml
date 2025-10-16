@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Roll out database change
         env:
-          BYTEBASE_TARGETS: "instances/test-sample-instance/databases/hr_test,instances/prod-sample-instance/databases/hr_prod"
+          BYTEBASE_TARGETS: "instances/new-instance/databases/test,instances/new-instance/databases/production"
           FILE_PATTERN: "schema/*.sql"
           BYTEBASE_OUTPUT: ${{ runner.temp }}/bytebase-metadata.json
         run: |
